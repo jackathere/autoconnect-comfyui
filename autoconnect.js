@@ -64,6 +64,9 @@ const ext = {
     button.textContent = "Autoconnect";
     button.addEventListener("click", doConnect);
     document.querySelector("div.comfy-menu").appendChild(button);
+    // for new menu
+    document.querySelector(".comfyui-menu .comfyui-button-group.comfyui-menu-mobile-collapse").appendChild(button);
+    button.classList.add("comfyui-button");
 
     window.addEventListener("keydown", event =>
     {
